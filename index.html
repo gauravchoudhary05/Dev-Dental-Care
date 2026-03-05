@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Dental Care & Orthodontic Center | Premium Dental Clinic in Jaipur</title>
+    <title>SK Dental Clinic | Best Dental Clinic in Vaishali Nagar, Jaipur</title>
     <meta name="description"
-        content="Experience top-tier dental care at Dev Dental Care and Orthodontic Center in Jaipur. Dr. Sheetal Bohra offers expert orthodontics, root canals, and more. Rated 4.8 stars.">
+        content="SK Dental Clinic – Vaishali Nagar, Jaipur. 5.0★ rated by 45+ patients. Expert dental care by Dr. Kamlesh Sharma & Dr. Surendra. Painless treatments, dental implants, orthodontics & more.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,20 +23,22 @@
     <header class="navbar" id="navbar">
         <div class="container nav-content">
             <a href="#" class="logo">
-                <i class="fa-solid fa-tooth"></i>
+                <div class="logo-icon">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
                 <div class="logo-text">
-                    <h1>Dev Dental Care</h1>
-                    <span>& Orthodontic Center</span>
+                    <h1>SK Dental Clinic</h1>
+                    <span>SK डेंटल क्लीनिक</span>
                 </div>
             </a>
-            <nav class="nav-links">
+            <nav class="nav-links" id="navLinks">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#reviews">Reviews</a>
-                <a href="#contact" class="btn btn-primary nav-btn">Contact Us</a>
+                <a href="#contact" class="btn btn-primary nav-btn">Book Now</a>
             </nav>
-            <div class="mobile-menu-btn">
+            <div class="mobile-menu-btn" id="menuBtn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
@@ -44,29 +46,104 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="particles" id="particles"></div>
         </div>
         <div class="container hero-container">
             <div class="hero-content fade-in-up">
-                <div class="rating-badge">
-                    <i class="fa-solid fa-star"></i> 4.8 Rating (44 Reviews)
+                <div class="rating-badge pulse-glow">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>5.0 Rating · 45 Reviews</span>
                 </div>
-                <h2>A Beautiful Smile Begins Here</h2>
-                <p>Experience premium, painless, and compassionate dental care by <strong>Dr. Sheetal Bohra</strong> at
-                    Jaipur's finest Orthodontic Center.</p>
+                <h2 class="hero-title">
+                    Your Smile,<br>
+                    <span class="gradient-text">Our Passion</span>
+                </h2>
+                <p class="hero-subtitle" id="heroSubtitle"></p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary btn-lg">Book Appointment</a>
-                    <a href="#services" class="btn btn-secondary btn-lg">Explore Services</a>
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-calendar-check"></i> Book Appointment
+                    </a>
+                    <a href="https://wa.me/918003939145" target="_blank" class="btn btn-whatsapp btn-lg">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <i class="fa-solid fa-shield-check"></i>
+                        <span>Painless Treatment</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Open till 10 PM</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-square-parking"></i>
+                        <span>Free Parking</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image glass-panel fade-in-left">
-                <!-- Abstract representation of clean, modern dental tech or just a beautiful smile placeholder -->
-                <div class="hero-img-placeholder">
-                    <i class="fa-solid fa-tooth display-icon"></i>
+            <div class="hero-visual fade-in-left">
+                <div class="hero-card glass-card">
+                    <div class="tooth-3d">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
                     <h3>Premium Dental Care</h3>
-                    <p>देव डेंटल केयर एंड ऑर्थोडोंटिक सेंटर</p>
+                    <p>SK डेंटल क्लीनिक</p>
+                    <div class="hero-card-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="45">0</span>
+                            <span class="stat-label">Happy Reviews</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Star Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,40 C360,100 720,0 1080,60 C1260,90 1380,50 1440,40 L1440,120 L0,120 Z"
+                    fill="currentColor" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box fade-in-up delay-1">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3 class="counter" data-target="1000">0</h3>
+                    <span>+</span>
+                    <p>Happy Patients</p>
+                </div>
+                <div class="stat-box fade-in-up delay-2">
+                    <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+                    <h3 class="counter" data-target="45">0</h3>
+                    <p>5-Star Reviews</p>
+                </div>
+                <div class="stat-box fade-in-up delay-3">
+                    <div class="stat-icon"><i class="fa-solid fa-briefcase-medical"></i></div>
+                    <h3 class="counter" data-target="10">0</h3>
+                    <span>+</span>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-box fade-in-up delay-4">
+                    <div class="stat-icon"><i class="fa-solid fa-tooth"></i></div>
+                    <h3 class="counter" data-target="15">0</h3>
+                    <span>+</span>
+                    <p>Treatments Offered</p>
                 </div>
             </div>
         </div>
@@ -75,65 +152,125 @@
     <!-- About Section -->
     <section id="about" class="about section-padding">
         <div class="container about-container">
-            <div class="about-image glass-panel slide-in-right">
-                <div class="dr-profile">
-                    <div class="dr-avatar">
+            <div class="about-visual fade-in-right">
+                <div class="doctor-card glass-card">
+                    <div class="doctor-avatar">
                         <i class="fa-solid fa-user-doctor"></i>
                     </div>
-                    <h3>Dr. Sheetal Bohra</h3>
-                    <p class="specialty">Expert Orthodontist</p>
+                    <h3>Dr. Kamlesh Sharma</h3>
+                    <p class="doctor-title">Lead Dentist</p>
+                    <div class="doctor-divider"></div>
+                    <p class="doctor-desc">Expert in painless dental procedures with years of experience in advanced
+                        dental care.</p>
+                </div>
+                <div class="doctor-card glass-card" style="margin-top:20px;">
+                    <div class="doctor-avatar">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3>Dr. Surendra</h3>
+                    <p class="doctor-title">Senior Dentist</p>
+                    <div class="doctor-divider"></div>
+                    <p class="doctor-desc">Specialist in restorative dentistry and comprehensive oral healthcare.</p>
                 </div>
             </div>
-            <div class="about-content slide-in-left">
+            <div class="about-content fade-in-left">
                 <span class="section-subtitle">About Us</span>
-                <h2 class="section-title">Committed to Excellence in Dental Care</h2>
-                <p>At Dev Dental Care and Orthodontic Center, we believe that a healthy smile is a beautiful smile. Led
-                    by <strong>Dr. Sheetal Bohra</strong>, an expert orthodontist with years of highly-rated experience,
-                    our clinic is equipped to handle all your dental needs.</p>
-                <p>We pride ourselves on offering a top-notch facility with the highest standards of cleanliness and
-                    hygiene, ensuring every treatment—from simple fillings to complex root canals—is precise, painless,
-                    and empathetic.</p>
-                <ul class="about-features">
-                    <li><i class="fa-solid fa-circle-check"></i> Exceptional Patient Care</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Advanced Orthodontic Treatments</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Painless Procedures</li>
-                </ul>
+                <h2 class="section-title">Best Dental Clinic in<br><span class="gradient-text">Vaishali Nagar,
+                        Jaipur</span></h2>
+                <p>At SK Dental Clinic, we believe every smile deserves the best care. Our clinic on Lalarpura Road,
+                    Vaishali Nagar, combines years of expertise with a patient-first approach to deliver outstanding
+                    dental treatments.</p>
+                <p>With a perfect 5.0-star Google rating from 45 happy patients, our team led by Dr. Kamlesh Sharma and
+                    Dr. Surendra is dedicated to making dental visits comfortable, effective, and affordable.</p>
+                <div class="feature-tags">
+                    <div class="feature-tag">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        <span>Wheelchair Accessible</span>
+                    </div>
+                    <div class="feature-tag">
+                        <i class="fa-solid fa-rainbow"></i>
+                        <span>LGBTQ+ Friendly</span>
+                    </div>
+                    <div class="feature-tag">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>NFC & Google Pay</span>
+                    </div>
+                    <div class="feature-tag">
+                        <i class="fa-solid fa-square-parking"></i>
+                        <span>Free Parking</span>
+                    </div>
+                    <div class="feature-tag">
+                        <i class="fa-solid fa-baby"></i>
+                        <span>Nursing Room</span>
+                    </div>
+                    <div class="feature-tag">
+                        <i class="fa-solid fa-restroom"></i>
+                        <span>Gender-Neutral Restroom</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services section-padding bg-light">
+    <section id="services" class="services section-padding">
         <div class="container">
             <div class="section-header text-center fade-in-up">
                 <span class="section-subtitle">Our Services</span>
-                <h2 class="section-title">Comprehensive Dental Solutions</h2>
-                <p>State-of-the-art treatments tailored to your unique smile.</p>
+                <h2 class="section-title">Expert Dental <span class="gradient-text">Solutions</span></h2>
+                <p class="section-desc">Comprehensive treatments for every smile — from routine checkups to advanced
+                    procedures.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card glass-panel fade-in-up delay-1">
-                    <div class="service-icon"><i class="fa-solid fa-teeth-open"></i></div>
-                    <h3>Orthodontics & Braces</h3>
-                    <p>Expert braces treatment to align your teeth perfectly. Painless and effective solutions for all
-                        age groups.</p>
-                </div>
-                <div class="service-card glass-panel fade-in-up delay-2">
-                    <div class="service-icon"><i class="fa-solid fa-tooth"></i></div>
+                <div class="service-card glass-card fade-in-up delay-1">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
                     <h3>Root Canal Treatment</h3>
-                    <p>Precise and empathetic root canal procedures to save your natural tooth and relieve severe pain
-                        instantly.</p>
-                </div>
-                <div class="service-card glass-panel fade-in-up delay-3">
-                    <div class="service-icon"><i class="fa-solid fa-teeth"></i></div>
-                    <h3>Dental Fillings</h3>
-                    <p>High-quality cosmetic and structural tooth fillings restored with the utmost care and
-                        professional hygiene.</p>
-                </div>
-                <div class="service-card glass-panel fade-in-up delay-4">
-                    <div class="service-icon"><i class="fa-solid fa-syringe"></i></div>
-                    <h3>Tooth Extractions</h3>
-                    <p>Safe, comfortable, and expertly handled tooth extractions with proper post-operative guidance.
+                    <p>Painless root canal procedures to save your natural teeth and relieve dental pain effectively.
                     </p>
+                    <div class="service-hover-bar"></div>
+                </div>
+                <div class="service-card glass-card fade-in-up delay-2">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent tooth replacement solutions using state-of-the-art implant technology for a natural
+                        look.</p>
+                    <div class="service-hover-bar"></div>
+                </div>
+                <div class="service-card glass-card fade-in-up delay-3">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-teeth"></i>
+                    </div>
+                    <h3>Orthodontics & Braces</h3>
+                    <p>Expert braces and alignment treatment for perfectly straight, confident smiles at any age.</p>
+                    <div class="service-hover-bar"></div>
+                </div>
+                <div class="service-card glass-card fade-in-up delay-4">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-fill-drip"></i>
+                    </div>
+                    <h3>Dental Fillings</h3>
+                    <p>High-quality cosmetic and structural tooth fillings with advanced composite materials.</p>
+                    <div class="service-hover-bar"></div>
+                </div>
+                <div class="service-card glass-card fade-in-up delay-1">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3>Tooth Extractions</h3>
+                    <p>Safe, painless, and expertly handled extractions with comprehensive post-op care guidance.</p>
+                    <div class="service-hover-bar"></div>
+                </div>
+                <div class="service-card glass-card fade-in-up delay-2">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-face-smile-beam"></i>
+                    </div>
+                    <h3>Teeth Whitening</h3>
+                    <p>Professional whitening treatments for a brighter, more radiant smile you'll love to show off.</p>
+                    <div class="service-hover-bar"></div>
                 </div>
             </div>
         </div>
@@ -144,144 +281,213 @@
         <div class="container">
             <div class="section-header text-center fade-in-up">
                 <span class="section-subtitle">Testimonials</span>
-                <h2 class="section-title">What Our Patients Say</h2>
-                <div class="rating-summary">
-                    <h2>4.8</h2>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i>
+                <h2 class="section-title">What Our <span class="gradient-text">Patients Say</span></h2>
+                <div class="rating-summary-box">
+                    <div class="big-rating">5.0</div>
+                    <div class="rating-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                     </div>
-                    <p>Based on 44 reviews</p>
+                    <p>Based on 45 Google Reviews</p>
                 </div>
             </div>
 
-            <div class="reviews-carousel">
-                <div class="review-card glass-panel fade-in-up delay-1">
-                    <div class="reviewer">
-                        <div class="reviewer-avatar">D</div>
-                        <div>
-                            <h4>Dimpy Tekwani</h4>
-                            <div class="stars">★★★★★</div>
+            <div class="reviews-track-wrapper">
+                <div class="reviews-track" id="reviewsTrack">
+                    <!-- Review 1 -->
+                    <div class="review-card glass-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">R</div>
+                            <div>
+                                <h4>Raju Sharma</h4>
+                                <div class="review-stars">★★★★★</div>
+                                <span class="review-date">5 months ago</span>
+                            </div>
                         </div>
+                        <p>"Dr Kamlesh Sharma's good treatment skills.. Painless treatment 👍💯"</p>
                     </div>
-                    <p>"My experience with Dr Sheetal has been more than satisfactory, she is a very pleasant and soft
-                        spoken doctor. She did my Root canal treatment with precision and was very mindful and
-                        empathetic about my pain."</p>
-                </div>
-                <div class="review-card glass-panel fade-in-up delay-2">
-                    <div class="reviewer">
-                        <div class="reviewer-avatar">M</div>
-                        <div>
-                            <h4>Megha gupta</h4>
-                            <div class="stars">★★★★★</div>
+                    <!-- Review 2 -->
+                    <div class="review-card glass-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">S</div>
+                            <div>
+                                <h4>Saddam Hussain</h4>
+                                <div class="review-stars">★★★★★</div>
+                                <span class="review-date">2 years ago</span>
+                            </div>
                         </div>
+                        <p>"I appreciate SK Dental for making my smile again. Best Dental clinic in Vaishali Nagar
+                            Jaipur."</p>
                     </div>
-                    <p>"Visited Doctor Sheetal for dental filling ..she is extremely caring and professional…. The
-                        clinic is top notch with good cleanliness and hygiene ..Overall a very good experience!!"</p>
-                </div>
-                <div class="review-card glass-panel fade-in-up delay-3">
-                    <div class="reviewer">
-                        <div class="reviewer-avatar">S</div>
-                        <div>
-                            <h4>Dr. Sejal Shah</h4>
-                            <div class="stars">★★★★★</div>
+                    <!-- Review 3 -->
+                    <div class="review-card glass-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">S</div>
+                            <div>
+                                <h4>Shree Balaji Printers</h4>
+                                <div class="review-stars">★★★★★</div>
+                                <span class="review-date">2 years ago</span>
+                            </div>
                         </div>
+                        <p>"Good work by the doctors and his staff. Satisfied with the doctors work. Dr Kamlesh ji and
+                            Dr Surendra ji."</p>
                     </div>
-                    <p>"She is excellent human being and awesome Orthodontist. I highly recommend her to my all near and
-                        dear ones. She is very dedicated and sincere towards her work."</p>
-                </div>
-                <div class="review-card glass-panel fade-in-up delay-4">
-                    <div class="reviewer">
-                        <div class="reviewer-avatar">A</div>
-                        <div>
-                            <h4>Amisha Gangwal</h4>
-                            <div class="stars">★★★★★</div>
+                    <!-- Review 4 -->
+                    <div class="review-card glass-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">K</div>
+                            <div>
+                                <h4>KK Sharma</h4>
+                                <div class="review-stars">★★★★★</div>
+                                <span class="review-date">a year ago</span>
+                            </div>
                         </div>
+                        <p>"Good experienced doctors... And amazing treatment skills."</p>
                     </div>
-                    <p>"I visited dev dental clinic for braces treatment. It has been a great experience with dr.sheetal
-                        bohra. She took very good care with quality treatment."</p>
+                    <!-- Review 5 -->
+                    <div class="review-card glass-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">N</div>
+                            <div>
+                                <h4>Nitin Kumar</h4>
+                                <div class="review-stars">★★★★★</div>
+                                <span class="review-date">a year ago</span>
+                            </div>
+                        </div>
+                        <p>"Best work on Clinic. Rate treatment is very great."</p>
+                    </div>
+                    <!-- Review 6 -->
+                    <div class="review-card glass-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">I</div>
+                            <div>
+                                <h4>Ishwar Singh</h4>
+                                <div class="review-stars">★★★★★</div>
+                                <span class="review-date">2 years ago</span>
+                            </div>
+                        </div>
+                        <p>"Everything went fine... Very good dental treatment."</p>
+                    </div>
+                    <!-- Review 7 -->
+                    <div class="review-card glass-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">D</div>
+                            <div>
+                                <h4>Dinesh Kumar Saini</h4>
+                                <div class="review-stars">★★★★★</div>
+                                <span class="review-date">2 years ago</span>
+                            </div>
+                        </div>
+                        <p>"Nice Dental set-up. Well equipped."</p>
+                    </div>
+                    <!-- Review 8 -->
+                    <div class="review-card glass-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">J</div>
+                            <div>
+                                <h4>Jivendar Singh</h4>
+                                <div class="review-stars">★★★★★</div>
+                                <span class="review-date">2 years ago</span>
+                            </div>
+                        </div>
+                        <p>"Best dental clinic in Vaishali Nagar Jaipur."</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact & Location Section -->
-    <section id="contact" class="contact section-padding bg-dark">
+    <section id="contact" class="contact section-padding">
         <div class="container contact-container">
             <div class="contact-info fade-in-right">
-                <span class="section-subtitle">Get In Touch</span>
-                <h2 class="section-title text-white">Visit Our Clinic</h2>
-                <p class="text-light">We are conveniently located in Rangoli Gardens. Schedule an appointment or visit
-                    us during our operating hours.</p>
+                <span class="section-subtitle light">Get In Touch</span>
+                <h2 class="section-title text-white">Visit <span class="gradient-text">SK Dental Clinic</span></h2>
+                <p class="text-light-muted">We are conveniently located in Vaishali Nagar, Jaipur. Visit us or schedule
+                    an appointment today!</p>
 
                 <div class="info-list">
                     <div class="info-item">
                         <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
                         <div>
                             <h4>Location</h4>
-                            <p>F -24, 1st Floor, Rangoli Plaza, RANGOLI GARDENS, Maharana Pratap Rd, Shree Ram Nagar -
-                                A, Panchyawala, Jaipur, Rajasthan 302034</p>
+                            <p>Lalarpura Road, Gandipath, West, Chandra Vatika, Vaishali Nagar, Jaipur, Rajasthan 302034
+                            </p>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
                         <div>
                             <h4>Phone</h4>
-                            <p>098280 45188</p>
+                            <p><a href="tel:+918003939145" class="info-link">080039 39145</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/918003939145" target="_blank" class="info-link">Chat with us on
+                                    WhatsApp</a></p>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
                         <div>
                             <h4>Hours</h4>
-                            <p>Opens 10:00 AM Daily</p>
-                            <p class="text-sm">(Appointments Recommended)</p>
+                            <p>Open Daily · Closes 10 PM</p>
+                            <p class="text-xs">Appointments Recommended</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="map-container"
-                    style="margin-top: 30px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+                <div class="map-wrapper">
                     <iframe
-                        src="https://maps.google.com/maps?q=Dev%20Dental%20Care%20Rangoli%20Plaza%20Jaipur&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                        width="100%" height="250" style="border:0; display: block;" allowfullscreen="" loading="lazy"
+                        src="https://maps.google.com/maps?q=SK%20Dental%20Clinic%20Vaishali%20Nagar%20Jaipur&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="220" style="border:0; display:block;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
             </div>
 
-            <div class="contact-form-container glass-panel fade-in-left">
+            <div class="contact-form-container glass-card-dark fade-in-left">
                 <div class="form-header">
-                    <h3>Book Your Visit</h3>
+                    <h3><i class="fa-solid fa-calendar-plus"></i> Book Your Visit</h3>
                     <p>Fill out the form below and our team will get back to you shortly.</p>
                 </div>
                 <form class="contact-form" action="https://formsubmit.co/solardial102@gmail.com" method="POST">
-                    <!-- Disable Captcha (Optional) -->
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Appointment - SK Dental Clinic">
                     <div class="form-group input-icon-wrapper">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required id="formName">
                     </div>
                     <div class="form-group input-icon-wrapper">
                         <i class="fa-solid fa-phone"></i>
-                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required id="formPhone">
                     </div>
                     <div class="form-group input-icon-wrapper">
                         <i class="fa-solid fa-tooth"></i>
-                        <select name="service" required>
+                        <select name="service" required id="formService">
                             <option value="" disabled selected>Select Service</option>
-                            <option value="ortho">Orthodontics/Braces</option>
-                            <option value="rct">Root Canal</option>
-                            <option value="filling">Dental Filling</option>
-                            <option value="extraction">Extraction</option>
-                            <option value="other">General Consultation</option>
+                            <option value="Root Canal">Root Canal Treatment</option>
+                            <option value="Dental Implants">Dental Implants</option>
+                            <option value="Orthodontics">Orthodontics / Braces</option>
+                            <option value="Fillings">Dental Fillings</option>
+                            <option value="Extraction">Tooth Extraction</option>
+                            <option value="Whitening">Teeth Whitening</option>
+                            <option value="Consultation">General Consultation</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea name="concerns" placeholder="Any specific concerns?" rows="4"></textarea>
+                        <textarea name="concerns" placeholder="Any specific concerns?" rows="4"
+                            id="formConcerns"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+                    <button type="submit" class="btn btn-primary btn-block" id="formSubmit">
+                        <i class="fa-solid fa-paper-plane"></i> Submit Request
+                    </button>
                     <p class="form-note"><i class="fa-solid fa-lock"></i> Your information is safe and secure.</p>
                 </form>
             </div>
@@ -293,17 +499,19 @@
         <div class="container footer-content">
             <div class="footer-brand">
                 <div class="logo">
-                    <i class="fa-solid fa-tooth"></i>
+                    <div class="logo-icon"><i class="fa-solid fa-tooth"></i></div>
                     <div class="logo-text">
-                        <h2>Dev Dental Care</h2>
-                        <span>Dr. Sheetal Bohra</span>
+                        <h2>SK Dental Clinic</h2>
+                        <span>Dr. Kamlesh Sharma & Dr. Surendra</span>
                     </div>
                 </div>
-                <p>Premium orthodontics and comprehensive dental treatments in Jaipur.</p>
+                <p>Premium dental care and expert treatments in Vaishali Nagar, Jaipur.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://wa.me/918003939145" target="_blank" aria-label="WhatsApp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="tel:+918003939145" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             <div class="footer-links">
@@ -312,19 +520,26 @@
                 <a href="#about">About Us</a>
                 <a href="#services">Services</a>
                 <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="footer-links">
                 <h4>Services</h4>
-                <a href="#services">Braces</a>
                 <a href="#services">Root Canal</a>
+                <a href="#services">Dental Implants</a>
+                <a href="#services">Braces</a>
                 <a href="#services">Fillings</a>
-                <a href="#services">Extractions</a>
+                <a href="#services">Teeth Whitening</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Dev Dental Care & Orthodontic Center. All Rights Reserved.</p>
+            <p>&copy; 2026 SK Dental Clinic. All Rights Reserved. | Vaishali Nagar, Jaipur</p>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918003939145" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <!-- Scripts -->
     <script src="script.js"></script>
